@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MosqueraAnthonny_TareaApuntes.NotasPage"
+             Title="NotasPage">
+
+    <VerticalStackLayout>
+        <CollectionView ItemsSource="{Binding Notas}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Padding="10" Margin="5" BorderColor="Gray">
+                        <StackLayout>
+                            <Label Text="{Binding Titulo}" FontSize="18" FontAttributes="Bold" />
+                            <Label Text="{Binding Contenido}" FontSize="14" />
+                        </StackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <Button Text="Agregar Nota" Clicked="AgregarNota_Clicked" />
+    </VerticalStackLayout>
+</ContentPage>

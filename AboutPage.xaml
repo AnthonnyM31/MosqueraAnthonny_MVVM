@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MosqueraAnthonny_TareaApuntes.AboutPage"
+             Title="AboutPage">
+    <StackLayout Padding="20">
+        <Label Text="Anthonny Mosquera"
+               FontSize="24"
+               HorizontalOptions="Center" />
+        <Label Text="Soy un estudiante de Ingeniería de Software..."
+               FontSize="18"
+               HorizontalOptions="Center" />
+        <Image Source="yo.png"
+               HeightRequest="100"
+               WidthRequest="100"
+               HorizontalOptions="Center" />
+    </StackLayout>
+</ContentPage>
